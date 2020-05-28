@@ -22,7 +22,7 @@ pipeline {
 
 	  stage('Deploy') {
          steps {
-			 sh "mvn clen heroku:deploy"
+			 sh "mvn clean heroku:deploy"
          }
 
       }
